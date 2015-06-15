@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jane Doette - Front-End Ninja</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+
+    <!-- asynchronously load the picturefill polyfill (to support more browsers) -->
+    <script>
+        //create the picture element HTML5 shiv first
+        //to allow older browsers to recognize picture elements
+        //if it encounters them before picturefill has finished loading
+        document.createElement("picture");
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/2.3.1/picturefill.min.js" async></script>
+</head>
+<body>
+
+    <header class="header-section row">
+
+        <section class="header-logo-section">
+            <img src="images/logo_1x.jpg" srcset="images/logo_1x.jpg 1x, images/logo_2x.jpg 2x" alt="Logo">
+        </section>
+
+        <section class="header-title-section text-uppercase text-right">
+            <h1 class="title">Jane Doette</h1>
+            <h4 class="subtitle">Front-End Ninja</h4>
+        </section>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section class="hero-section">
+            <picture>
+                <source media="(max-width: 450px)" srcset="images/hero_small_1x.jpg 1x, images/hero_small_2x.jpg 2x">
+                <img src="images/hero_large_1x.jpg" srcset="images/hero_large_1x.jpg 1x, images/hero_large_2x.jpg 2x" alt="Hero Image">
+            </picture>
+        </section>
+
+        <section class="featured-section row">
+
+            <section class="featured-title-section">
+                <h2 class="text-capitalize text-muted text-thick">Featured Work</h2>
+            </section>
+
+            <section class="featured-items-section row text-center">
+                <div class="featured-item-section">
+                    <a class="featured-item-link text-medium" href="https://github.com/udacity/Appify">
+                        <picture>
+                            <source media="(max-width: 450px)" srcset="images/appify_large_1x.jpg 1x, images/appify_large_2x.jpg 2x">
+                            <img src="images/appify_small_1x.jpg" srcset="images/appify_small_1x.jpg 1x, images/appify_small_2x.jpg 2x" alt="Appify">
+                        </picture>
+                        <h3 class="featured-item-header text-uppercase text-thick">Appify</h3>
+                        https://github.com/udacity/Appify
+                    </a>
+                </div>
+                <div class="featured-item-section">
+                    <a class="featured-item-link text-medium" href="https://github.com/udacity/Sunflower">
+                        <picture>
+                            <source media="(max-width: 450px)" srcset="images/sunflower_large_1x.jpg 1x, images/sunflower_large_2x.jpg 2x">
+                            <img src="images/sunflower_small_1x.jpg" srcset="images/sunflower_small_1x.jpg 1x, images/sunflower_small_2x.jpg 2x" alt="Sunflower">
+                        </picture>
+                        <h3 class="featured-item-header text-uppercase text-thick">Sunflower</h3>
+                        https://github.com/udacity/Sunflower
+                    </a>
+                </div>
+                <div class="featured-item-section">
+                    <a class="featured-item-link text-medium" href="https://github.com/udacity/Bokeh">
+                        <picture>
+                            <source media="(max-width: 450px)" srcset="images/bokeh_large_1x.jpg 1x, images/bokeh_large_2x.jpg 2x">
+                            <img src="images/bokeh_small_1x.jpg" srcset="images/bokeh_small_1x.jpg 1x, images/bokeh_small_2x.jpg 2x" alt="Bokeh">
+                        </picture>
+                        <h3 class="featured-item-header text-uppercase text-thick">Bokeh</h3>
+                        https://github.com/udacity/Bokeh
+                    </a>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "name": "portfolio-website",
+    "version": "0.1.0",
+    "description": "Basic responsive portfolio website",
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "grunt-responsive-images": "~0.1.6"
+    }
+}

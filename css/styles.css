@@ -1,0 +1,200 @@
+/*********************************
+ * GENERAL
+ *********************************/
+
+/* tag styles */
+body {
+    font-family: "Lato", sans-serif;
+    color: #747704;
+    letter-spacing: 0.05em;
+    margin: 8px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+img {
+    /* to make img responsive */
+    max-width: 100%;
+    height: auto;
+}
+hr {
+    border: none;
+    height: 0.2em;
+    background-color: #bcbbbb;
+}
+
+/* layout */
+.row {
+    width: 100%;
+
+    /* from https://css-tricks.com/using-flexbox */
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+    /* based on https://gist.github.com/jayj/4012969 */
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+/* text transformations */
+.text-lowercase {
+    text-transform: lowercase;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+/* alignments */
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.text-justify {
+    text-align: justify;
+}
+
+/* text styles and colors */
+.text-thin {
+    font-weight: 100;
+}
+.text-medium {
+    font-weight: 300;
+}
+.text-thick {
+    font-weight: 400;
+}
+.text-muted {
+    color: #bcbbbb;
+}
+
+/*********************************
+ * SECTIONS
+ *********************************/
+
+/* header section */
+.header-section {
+
+}
+.header-logo-section {
+    /* using a fixed width here by choice */
+    width: 80px;
+}
+.header-title-section {
+    width: calc(100% - 80px);
+}
+.title {
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 0.9em;
+    margin-top: 0.2em;
+}
+.subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 0.2em;
+}
+
+/* hero section */
+.hero-section {
+    width: 100%;
+}
+
+/* featured section */
+.featured-title-section {
+    width: 100%;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+}
+.featured-items-section {
+
+}
+.featured-items-section div {
+    width: calc((100% - 30px) / 3);
+    margin-right: 15px;
+}
+.featured-items-section div:last-of-type {
+    margin-right: 0px;
+}
+.featured-item-section {
+
+}
+.featured-item-header {
+    font-size: 24px;
+}
+.featured-item-link {
+    font-size: 14px;
+    letter-spacing: 0;
+    text-decoration: none;
+    color: #747704;
+    display: block;
+}
+.featured-item-link:hover {
+    text-decoration: underline;
+}
+
+/*********************************
+ * MEDIA QUERIES
+ *********************************/
+
+/* mostly fluid: column drop for small widths */
+@media screen and (max-width: 450px) {
+    .header-logo-section {
+        width: 100%;
+        text-align: center;
+    }
+    .header-title-section {
+        width: 100%;
+        text-align: center;
+    }
+    .featured-title-section {
+        text-align: center;
+    }
+    .featured-items-section div {
+        width: 90%;
+        margin-bottom: 1.2em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .featured-items-section div:last-of-type {
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* scale font sizes dynamically for widths between small and large so that texts are contained */
+@media screen and (min-width: 451px) and (max-width: 799px) {
+    .featured-item-header {
+        font-size: 3vw;
+    }
+    .featured-item-link {
+        font-size: 1.7vw;
+    }
+}
+
+/* mostly fluid: margins on the sides for large widths */
+@media screen and (min-width: 800px) {
+    body {
+        width: 800px;
+        margin: 8px auto;
+    }
+}

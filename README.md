@@ -42,9 +42,11 @@ These are the files/folders that come with this project:
 
 ## External Modules Used
 
-[picturefill](http://scottjehl.github.io/picturefill/) - a polyfill that helps support the <picture\> element in non-supported browsers
+* [picturefill](http://scottjehl.github.io/picturefill/) - a polyfill that helps support the `<picture>` element in non-supported browsers
 
-[normalize.css](http://necolas.github.io/normalize.css/) - for more consistent rendering of elements across different browsers
+    NOTE: picturefill currently [does not work in Mozilla FireFox 38 and 39 due to some bugs which will be fixed in 40](https://github.com/scottjehl/picturefill#the-gotchas).
+
+* [normalize.css](http://necolas.github.io/normalize.css/) - for more consistent rendering of elements across different browsers
 
 
 ## Running The Project

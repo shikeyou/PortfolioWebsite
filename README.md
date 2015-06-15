@@ -11,6 +11,10 @@ Main objectives of this project:
 * Given a website mockup PDF file, create the website using HTML and CSS
 * Website must be responsive
 
+## Online Live View
+
+The website is available online for viewing at [http://shikeyou.github.io/PortfolioWebsite/](http://shikeyou.github.io/PortfolioWebsite/)
+
 ## Features
 
 * Fully responsive website which works on small mobile screens (single column) to large desktop screens (three columns)
@@ -68,3 +72,11 @@ NOTE: Steps 2 and 3 are optional. The scaled images are already included in this
     Scaled images for various screen widths and device pixel densities will be created automatically in the *images* folder.
 
 4. Open *index.html* in a web browser (Google Chrome is recommended)
+
+
+## Validation
+
+This project has been [HTML](https://validator.w3.org/nu/?showsource=yes&useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&doc=http%3A%2F%2Fshikeyou.github.io%2FPortfolioWebsite%2F) and [CSS](https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fshikeyou.github.io%2FPortfolioWebsite%2F&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en) validated.
+
+NOTE: The 2 CSS errors are due to a [bug in the CSS validator](https://www.w3.org/Bugs/Public/show_bug.cgi?id=18913) which cannot handle the calc() function
+
